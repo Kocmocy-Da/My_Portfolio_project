@@ -7,8 +7,8 @@
 <body>
     <h1>This is Blog, my dudes</h1>
     {% for post in posts %}
-        <h2>{{ post.title }}</h2>
-        <p>{{ post.time }}<p>
+    <a href="{% url 'blog:detail' post.id %}"><h2>{{ post.title }}</h2></a>
+        <h5>{{ post.time }}</h5>
         <p>{{ post.description }}</p>
     {% endfor %}
 </body>
