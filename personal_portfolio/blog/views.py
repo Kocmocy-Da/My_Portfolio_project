@@ -3,7 +3,7 @@ from .models import Post
 
 
 def all_blogs(request):
-    posts = Post.objects.order_by('-time')[:5] # последние 5 постов, сортировка по дате
+    posts = Post.objects.order_by('-time') # [:5] - последние 5 постов, сортировка по дате
     return render(request, 'blog/all_blogs.html', {'posts': posts})
 
 

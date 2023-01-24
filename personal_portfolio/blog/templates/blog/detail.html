@@ -5,6 +5,11 @@
     <title>{{ blog.title }}</title>
 </head>
 <body>
-    {{ blog.title }}
+    <h1>{{ blog.title }}</h1>
+    <h2>--{{ blog.time|date:'F jS Y' }}--</h2>
+    {{ blog.description }}
+    <br>
+    <br>
+    <a href="{% url 'blog:all_blogs' %}">Go back</a>
 </body>
 </html>
