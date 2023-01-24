@@ -1,10 +1,11 @@
-<!DOCTYPE html>
-<html lang="en">
+{% extends 'portfolio/base.html' %}
+
+{% block content %}
+
 <head>
-    <meta charset="UTF-8">
-    <title>Blog</title>
+    <title>Posts</title>
 </head>
-<body>
+
     <h1>This is Blog, my dudes</h1>
     <a href="{% url 'Home' %}">Ok, back home</a>
     <h2>Zhenya has written {{ posts.count }} post{{ posts.count|pluralize }}</h2>
@@ -13,5 +14,5 @@
         <h5>{{ post.time|date:'d M Y'}}</h5>
         <p>{{ post.description|truncatechars:100 }}</p>
     {% endfor %}
-</body>
-</html>
+
+{% endblock %}
