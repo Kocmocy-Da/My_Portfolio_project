@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Mukta:wght@400;600&family=Pacifico&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Mukta';
+}
+
+.back-button {
+    background-color: rgba(1, 1, 1, 0.744);
+    list-style-type: none;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 35px;
+    display: flex;
+}
+
+.back-button a {
+    text-decoration: none;
+    font-size: 25px;
+    color: white;
+}
+
+.main-title {
+    text-align: center;
+    padding-top: 40px;
+    padding-bottom: 10px;
+    font-size: 30px;
+    color: rgba(1, 1, 1, 0.744);
+}
+
+.posts-counter {
+    text-align: left;
+    font-size: 17px;
+    color: black;
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+.post {
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+.post a {
+    text-decoration: none;
+    color: rgb(182, 61, 0);
+    font-size: 20px;
+}
+
+.post h5 {
+    font-size: 18px;
+}
+
+.post p {
+    font-size: 15px;
+}
